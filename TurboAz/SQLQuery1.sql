@@ -12,3 +12,12 @@ Description nvarchar(max)
 
 INSERT INTO Users(Login	, Password)
 VALUES ('Admin','Admin');
+
+
+INSERT INTO Users(Login	, Password)
+VALUES ('Moderator','Moderator');
+
+INSERT INTO Users(Login	, Password)
+VALUES ('User','User');
+
+select * from Users
