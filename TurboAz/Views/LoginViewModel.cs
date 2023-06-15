@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Input;
 using TurboAz.Commands;
 using TurboAz.Models;
@@ -60,16 +61,31 @@ namespace TurboAz.ViewModels
 
         private void LoginExecute()
         {
-            // Perform any necessary validation or additional logic
-
             User user = userRepository.GetUserByLogin(Login);
 
             if (user != null && user.Password == Password)
             {
-                // TO ADD
-                
-                //ErrorMessage = "Succesful login"; метод рабочий
+                // Login successful
+                if (user.Login == "Admin")
+                {
+                    // Open admin window
+                    AdminWindow adminWindow = new AdminWindow();
+                    adminWindow.Show();
 
+                }
+                else if (user.Login == "Moderator")
+                {
+                    // Open moderator window
+                    ModeratorWindow moderatorWindow = new ModeratorWindow();
+                    moderatorWindow.Show();
+                }
+                else
+                {
+                    // Open user window
+                    UserWindow userWindow = new UserWindow();
+                    userWindow.Show();
+
+                }
             }
             else
             {
@@ -77,6 +93,7 @@ namespace TurboAz.ViewModels
                 ErrorMessage = "Invalid login credentials.";
             }
         }
+      
 
         public event PropertyChangedEventHandler PropertyChanged;
 

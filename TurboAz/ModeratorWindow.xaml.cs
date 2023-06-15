@@ -18,7 +18,7 @@ namespace TurboAz
     /// <summary>
     /// Interaction logic for ModeratorWindow.xaml
     /// </summary>
-    public partial class ModeratorWindow : UserControl
+    public partial class ModeratorWindow : Window
     {
         public ModeratorWindow()
         {

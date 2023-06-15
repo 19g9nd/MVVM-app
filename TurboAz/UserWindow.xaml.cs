@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace TurboAz
 {
     /// <summary>
-    /// Interaction logic for AdminWindow.xaml
+    /// Interaction logic for UserWindow.xaml
     /// </summary>
-    public partial class AdminWindow : Window
+    public partial class UserWindow : Window
     {
-        public AdminWindow()
+        public UserWindow()
         {
             InitializeComponent();
         }

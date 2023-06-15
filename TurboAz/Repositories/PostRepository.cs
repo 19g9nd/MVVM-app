@@ -32,6 +32,6 @@ namespace TurboAz.Repositories
             Execute(sql, post);
         }
 
-        // Additional methods for fetching multiple posts
+       
     }
 }
