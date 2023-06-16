@@ -3,11 +3,11 @@ using TurboAz.Repositories;
 
 namespace TurboAz.ViewModels
 {
-    public class CreatePostViewModel 
+    public class CreatePostView 
     {
         private readonly PostRepository postRepository;
 
-        public CreatePostViewModel(string connectionString)
+        public CreatePostView(string connectionString)
         {
             postRepository = new PostRepository(connectionString);
         }

@@ -24,7 +24,7 @@ namespace TurboAz
         public LoginWindow()
         {
             InitializeComponent();
-            DataContext = new LoginViewModel();
+            DataContext = new LoginView();
         }
     }
 }

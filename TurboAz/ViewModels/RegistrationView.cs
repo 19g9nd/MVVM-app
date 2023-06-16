@@ -8,11 +8,11 @@ using TurboAz.Repositories;
 
 namespace TurboAz.ViewModels.Base
 {
-    public class RegistrationViewModel
+    public class RegistrationView
     {
         private readonly UserRepository userRepository;
 
-        public RegistrationViewModel(string connectionString)
+        public RegistrationView(string connectionString)
         {
             userRepository = new UserRepository(connectionString);
         }

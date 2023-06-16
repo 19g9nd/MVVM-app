@@ -12,7 +12,7 @@ using TurboAz.Repositories;
 
 namespace TurboAz.ViewModels
 {
-    public class LoginViewModel : INotifyPropertyChanged
+    public class LoginView : INotifyPropertyChanged
     {
         private string login;
         private string password;
@@ -52,7 +52,7 @@ namespace TurboAz.ViewModels
 
         private readonly UserRepository userRepository;
 
-        public LoginViewModel()
+        public LoginView()
         {
             userRepository = new UserRepository("Server= localhost; Database=TurboAz; Integrated Security=True;");
 

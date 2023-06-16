@@ -20,7 +20,6 @@ namespace TurboAz.Repositories
             string sql = "INSERT INTO Users (Login, Password) VALUES (@Login, @Password)";
             Execute(sql, user);
         }
-
-        // methods for updating, deleting, or fetching multiple users 
+ 
     }
 }
